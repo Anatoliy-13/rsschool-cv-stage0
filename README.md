@@ -1,2 +1,2 @@
 # rsschool-cv
-My CV
+https://anatoliy-13.github.io/rsschool-cv/
