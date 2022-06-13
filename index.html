@@ -49,13 +49,15 @@
                 </section>
                 <section class="contacts" id="contact">
                     <h2 class="about_contacts">Contacts</h2>
+                    <div class="underlined"></div>
                     <div class="about_contacts_link"><img src="./image/mob.png" alt="tel"><a href="tel:+380505421730">+38  050 542 17 30</a></div>
                     <div class="about_contacts_link"><img src="./image/mail.png" alt="mail"><a href="mailto:arhangeltm13@gmail.com">arhangeltm13@gmail.com</a></div>
-                    <div class="about_contacts_link"><img src="./image/github.png" alt="mail"><a href="https://github.com/Anatoliy-13">Anatoliy-13</a></div>
-                    <div class="about_contacts_link"><img src="./image/linkedin.png" alt="mail"><a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit">Anatolii Veretennikov</a></div>
+                    <div class="about_contacts_link"><img src="./image/github.png" alt="git"><a href="https://github.com/Anatoliy-13" target="_blank">Anatoliy-13</a></div>
+                    <div class="about_contacts_link"><img src="./image/linkedin.png" alt="linkedin"><a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit" target="_blank">Anatolii Veretennikov</a></div>
                 </section>
                 <section class="education" id="education">
                     <h2 class="about_education">Education</h2>
+                    <div class="underlined"></div>
                     <ul class="education_list">
                         <li class="education_list_item">
                             <strong>Kyiv university of Civil Aviation</strong>
@@ -70,6 +72,7 @@
                 </section>
                 <section class="courses" id="courses">
                     <h2 class="about_courses">Courses</h2>
+                    <div class="underlined"></div>
                     <ul class="courses_list">
                         <li class="courses_list_item">
                             09/2021
@@ -92,7 +95,7 @@
             <section class="about_me" id="about_me">
                 <section class="person">
                     <h1 class="person_header">Anatolii <br> Veretennikov</h1>
-                    <h3 class="person_label">Front-End developer</h3>
+                    <h3 class="person_label">Junior Front-End Developer</h3>
                 </section>
                 <section class="about_me_personal" id="about_me_personal">
                     <h2 class="about_me_personal_header">About me</h2>
@@ -125,18 +128,38 @@
                         <li class="key_strenght_items">Communicative</li>
                     </ul>
                 </section>
-                <section class="Projects" id="projects">
-                    <h2 class="projects">Projects</h2>
+                <section class="projects" id="projects">
+                    <h2 class="projects_header">Projects</h2>
                     <a href="https://github.com/Anatoliy-13" class="projects_list">Projects</a>
                 </section>
-                <section class="Code example">
-                    <h2 class="Code_example">Code example</h2>
-                    
+                <section class="code example">
+                    <h2 class="code_example">Code example</h2>
+                    <pre class="code_example_list">
+                        <code>
+                            "var images = new Array();
+                            function preloadImages(){
+                                for (i=0; i < preloadImages.arguments.length; i++){
+                                     images[i] = new Image();
+                                    images[i].src = preloadImages.arguments[i];
+                                }
+                            }
+                            preloadImages("логотип.jpg "," main_bg.jpg "," body_bg.jpg "," header_bg.jpg ");"
+                        </code>
+                    </pre>
                 </section>
             </section>
         </main>
-        <footer>
-            
+        <footer class="footer">
+            <div class="footer_items">
+                <img src="./image/github.png" alt="git">
+                <a class="footer__github" href="https://github.com/Anatoliy-13" target="_blank">
+                My GitHub
+                </a>
+            </div>
+            <p class="footer__year">2022</p>
+            <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+                <img src="https://petr9ra.github.io/rsschool-cv/img/rs_school_js.svg" width="86" height="32" alt="RS School">
+             </a>
         </footer>
     </div>
 </body>
