@@ -137,14 +137,23 @@
                     <h2 class="code_example" id="code_example">Code example</h2>
                     <pre class="code_example_list">
                         <code>
-                            "var images = new Array();
-                            function preloadImages(){
-                                for (i=0; i < preloadImages.arguments.length; i++){
-                                     images[i] = new Image();
-                                    images[i].src = preloadImages.arguments[i];
+                            "function f1() {
+                                if(document.all) { return false; }
+                              }
+                              function f2(e) {
+                                if(document.layers || (document.getElementById &! document.all)) {
+                                  if(e.which==2 || e.which==3) { return false; }
                                 }
-                            }
-                            preloadImages("логотип.jpg "," main_bg.jpg "," body_bg.jpg "," header_bg.jpg ");"
+                              }
+                              if(document.layers) {
+                                document.captureEvents(Event.MOUSEDOWN);
+                                document.onmousedown = f1;
+                              }
+                              else {
+                                document.onmouseup = f2;
+                                document.oncontextmenu = f1;
+                              }
+                              document.oncontextmenu = new function("return false");"
                         </code>
                     </pre>
                 </section>
