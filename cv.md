@@ -13,3 +13,13 @@ Git
 English - A2 studying
 Ukrainian - Native
 Russian - Native
+
+---
+
+Key strengths
+Purposeful
+Responsible
+Smart student
+Hardworking
+Conscientious
+Communicative
